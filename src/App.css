@@ -80,7 +80,7 @@
 
   
   .todo-list {
-    margin-top: 20px; /* Espaçamento acima da lista */
+    margin-top: 20px; 
   }
   
   .todo {
@@ -111,16 +111,16 @@
     cursor: pointer;
   }
 
-  /* Escondendo o checkbox padrão */
+
 .custom-checkbox input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 0;
+    height: 0;  
     width: 0;
   }
   
-  /* Estilizando o container do checkbox */
+
   .custom-checkbox {
     display: inline-block;
     position: relative;
@@ -129,7 +129,7 @@
     user-select: none;
   }
   
-  /* Estilizando o "checkmark" */
+
   .custom-checkbox .checkmark {
     position: absolute;
     top: 10px;
@@ -141,14 +141,13 @@
     border: 1px solid #ccc;
     transition: background-color 0.3s;
   }
-  
-  /* Estilização do checkbox quando marcado */
+
   .custom-checkbox input[type="checkbox"]:checked + .checkmark {
     background-color: #B983FF;
     border: none;
   }
   
-  /* Adicionando o ícone de check */
+
   .custom-checkbox .checkmark::after {
     content: "";
     position: absolute;
@@ -162,7 +161,7 @@
     transform: rotate(45deg);
   }
   
-  /* Mostra o ícone de check quando marcado */
+
   .custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
     display: block;
   }
@@ -174,7 +173,6 @@
   
 
 
-/* Container principal */
 .container {
   display: flex;
   flex-direction: column;
@@ -184,7 +182,6 @@
   background-color: #B7D3DF;
 }
 
-/* Estilização do cabeçalho */
 .header {
   background-color: #B983FF;
   width: 500px;
@@ -196,7 +193,7 @@
   margin-top: 20px;
 }
 
-/* Estilização do formulário principal */
+
 .app {
   display: flex;
   flex-direction: column;
@@ -208,27 +205,26 @@
   margin-bottom: 20px;
 }
 
-/* Alinhamento e estilo do título da tarefa */
+
 .app h3 {
   text-align: left;
   color: #333;
   margin-bottom: 10px;
 }
 
-/* Agrupamento do input e select lado a lado */
+
 .app .form-group {
   display: flex;
   justify-content: space-between;
-  gap: 10px; /* Espaçamento entre o input e o select */
+  gap: 10px; 
   margin-bottom: 20px;
 }
 
-/* Estilização do input e select */
 .app input,
 .app select,
 .pesquisa input
 {
-  width: 48%; /* Largura do input e select */
+  width: 48%;
   padding: 10px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -237,7 +233,7 @@
 }
 
 .filtro select {
-  width: 200px; /* Largura do input e select */
+  width: 200px; 
   padding: 10px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -245,10 +241,10 @@
   box-sizing: border-box;
 }
 
-/* Estilização do botão de criação */
+
 .app button {
-  display: block; /* Faz com que o botão seja um bloco */
-  margin: 20px auto 0; /* Margem automática para centralizar horizontalmente */
+  display: block; 
+  margin: 20px auto 0; 
   width: 200px;
   background-color: #B983FF;
   border: none;
@@ -259,5 +255,5 @@
 }
 
 .app button:hover {
-  background-color: #a672f1; /* Cor do botão ao passar o mouse */
+  background-color: #a672f1; 
 }
